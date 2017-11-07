@@ -1,0 +1,55 @@
+<!--Primeros Formularios de Victor Moncada en Beyondjs-->
+<div class="page-content">
+
+    <form is="iron-form">
+        <div class="row">
+            <div class="col-sm-push-2 col-sm-8 col-md-push-3 col-md-6">
+                <paper-input
+                        class="name"
+                        label="Nombre"
+                        required
+                        raised></paper-input>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-push-2 col-sm-8 col-md-push-3 col-md-6">
+                <paper-input
+                        class="lastname"
+                        label="Apellido"
+                        required
+                        raised></paper-input>
+            </div>
+        </div>
+        <div class="optional"/>
+        <div class="row">
+            <div class="col-sm-push-2 col-sm-8 col-md-push-3 col-md-6">
+                <paper-input
+                        class="password"
+                        label="Contraseña"
+                        type="password"
+                        error-message="La contraseña no cumple con los requerimientos"
+                        auto-validate
+                        pattern="^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])[a-zA-Z0-9]{6,}$"
+                        required
+                        raised></paper-input>
+
+
+                <div class="info">
+                    <iron-icon icon="graphs:info-circle"/>
+                    <label class="rules">
+                        La contraseña debe contener un mínimo de 6 caracteres y
+                        al menos 1 mayuscula, 1 minuscula y un valor numerico.
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="buttons-login container col-sm-push-2 col-sm-8 col-md-push-3 col-md-6">
+                <paper-button class="confirm primary" raised>{{confirm}}Ingresar</paper-button>
+            </div>
+        </div>
+
+    </form>
+</div>
