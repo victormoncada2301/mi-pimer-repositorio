@@ -1,1 +1,1 @@
-Bienvenidos a mi primer repositorio donde acompañado con Julio Rodriguez y el equipo de Jida estaremos aprendiendo 
+Bienvenidos a mi primer repositorio donde acompañado con Julio Rodriguez y el equipo de Jida estaremos aprendiendo el arte de la programacion 
