@@ -1,0 +1,52 @@
+<!-- Formularios en Polymer por Victor Moncada html-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<base href="https://raw-dot-custom-elements.appspot.com/PolymerElements/paper-input/v2.0.3/paper-input/">
+	<script src="../webcomponentsjs/webcomponents-lite.js"></script>
+	<link rel="import" href="paper-input.html">
+	<link rel="import" href="../iron-icons/iron-icons.html">
+	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+	
+	<title>Prueba</title>
+
+</head>
+
+<body>
+	
+	<!-- Estilos del formulario -->
+    <style>
+              paper-input {
+                max-width: 400px;
+                margin: auto;
+              }
+              iron-icon, div[suffix] {
+                color: hsl(0, 0%, 50%);
+                margin-right: 12px;
+              }
+    </style>
+	<!-- Estilos del formulario -->
+
+	<paper-input always-float-label label="Ingresa tu Nombre"></paper-input>
+	
+	<paper-input label="Ingresa tu Correo">
+		  <iron-icon icon="mail" slot="prefix"></iron-icon>
+		  <div slot="suffix">@gmail.com</div>
+	</paper-input>
+		 
+	 <paper-input
+		    class="password"
+		    label="Contraseña (*)"
+		    type="password"
+		    error-message="{Contraseña incorrecta}"
+		    auto-validate
+		    pattern="^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])[a-zA-Z0-9]{6,}$"
+		    required> 
+	 </paper-input>
+
+</body>
+</html>
+
+
