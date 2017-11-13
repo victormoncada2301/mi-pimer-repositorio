@@ -8,7 +8,6 @@
 	<script src="../webcomponentsjs/webcomponents-lite.js"></script>
 	<link rel="import" href="paper-input.html">
 	<link rel="import" href="../iron-icons/iron-icons.html">
-	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
 	
 	<title>Prueba</title>
 
@@ -17,28 +16,26 @@
 <body>
 	
 	<!-- Estilos del formulario -->
-    <style>
-              paper-input {
-                max-width: 400px;
-                margin: auto;
-              }
-              iron-icon, div[suffix] {
-                color: hsl(0, 0%, 50%);
-                margin-right: 12px;
-              }
-    </style>
+	<style>
+			  paper-input {
+			    max-width: 400px;
+			    margin: auto;
+			  }
+			  iron-icon, div[suffix] {
+			    color: hsl(0, 0%, 50%);
+			    margin-right: 12px;
+			  }
+	</style>
 	<!-- Estilos del formulario -->
 
 	<paper-input always-float-label label="Ingresa tu Nombre"></paper-input>
 	
-	<paper-input label="Ingresa tu Correo">
+	<paper-input always-float-label label="Ingresa tu Correo">
 		  <iron-icon icon="mail" slot="prefix"></iron-icon>
-		  <div slot="suffix">@gmail.com</div>
 	</paper-input>
 		 
-	 <paper-input
+	 <paper-input always-float-label label="Ingresa tu Contraseña"
 		    class="password"
-		    label="Contraseña (*)"
 		    type="password"
 		    error-message="{Contraseña incorrecta}"
 		    auto-validate
