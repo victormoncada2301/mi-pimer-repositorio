@@ -2,46 +2,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	
-	<base href="https://raw-dot-custom-elements.appspot.com/PolymerElements/paper-input/v2.0.3/paper-input/">
-	<script src="../webcomponentsjs/webcomponents-lite.js"></script>
-	<link rel="import" href="paper-input.html">
-	<link rel="import" href="../iron-icons/iron-icons.html">
-	
-	<title>Prueba</title>
+    <meta charset="utf-8">
+
+    <base href="https://raw-dot-custom-elements.appspot.com/PolymerElements/paper-input/v2.0.3/paper-input/">
+    <script src="../webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="paper-input.html">
+    <link rel="import" href="../iron-icons/iron-icons.html">
+
+    <title>Prueba</title>
 
 </head>
 
 <body>
-	
-	<!-- Estilos del formulario -->
-	<style>
-			  paper-input {
-			    max-width: 400px;
-			    margin: auto;
-			  }
-			  iron-icon, div[suffix] {
-			    color: hsl(0, 0%, 50%);
-			    margin-right: 12px;
-			  }
-	</style>
-	<!-- Estilos del formulario -->
 
-	<paper-input always-float-label label="Ingresa tu Nombre"></paper-input>
-	
-	<paper-input always-float-label label="Ingresa tu Correo">
-		  <iron-icon icon="mail" slot="prefix"></iron-icon>
-	</paper-input>
-		 
-	 <paper-input always-float-label label="Ingresa tu Contraseña"
-		    class="password"
-		    type="password"
-		    error-message="{Contraseña incorrecta}"
-		    auto-validate
-		    pattern="^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])[a-zA-Z0-9]{6,}$"
-		    required> 
-	 </paper-input>
+<!-- Estilos del formulario -->
+<style>
+    paper-input {
+        max-width: 400px;
+        margin: auto;
+    }
+
+    iron-icon, div[suffix] {
+        color: hsl(0, 0%, 50%);
+        margin-right: 12px;
+    }
+</style>
+<!-- Estilos del formulario -->
+
+<paper-input always-float-label label="Ingresa tu Nombre"></paper-input>
+
+<paper-input always-float-label label="Ingresa tu Correo">
+    <iron-icon icon="mail" slot="prefix"></iron-icon>
+</paper-input>
+
+<paper-input always-float-label label="Ingresa tu Contraseña"
+             class="password"
+             type="password"
+             error-message="{Contraseña incorrecta}"
+             auto-validate
+             pattern="^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])[a-zA-Z0-9]{6,}$"
+             required>
+</paper-input>
 
 </body>
 </html>
